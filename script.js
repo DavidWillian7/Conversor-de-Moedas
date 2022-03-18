@@ -3,7 +3,7 @@ function ConverterDolar(){
     let valor = parseFloat(elemento.value);
     let dolar = (valor/5.13).toFixed(2);
     let conversao = document.getElementById("valorConvertido");
-    conversao.innerHTML = `O valor em dólar é US$ ${dolar}`;
+    conversao.innerHTML = `R$ ${valor} em dólar é US$ ${dolar}`;
 }
 
 function ConverterEuro(){
@@ -11,7 +11,7 @@ function ConverterEuro(){
     let valor = parseFloat(elemento.value);
     let euro = (valor/5.62).toFixed(2);
     let conversao = document.getElementById("valorConvertido");
-    conversao.innerHTML = `O valor em euro é € ${euro}`;
+    conversao.innerHTML = `R$ ${valor} em euro é € ${euro}`;
 }
 
 function ConverterBitcoin(){
@@ -19,5 +19,5 @@ function ConverterBitcoin(){
     let valor = parseFloat(elemento.value);
     let bitcoin = (valor/198555.49).toFixed(6);
     let conversao = document.getElementById("valorConvertido");
-    conversao.innerHTML = `O valor em bitcoin é ₿ ${bitcoin}`;
+    conversao.innerHTML = `R$ ${valor} em bitcoin é ₿ ${bitcoin}`;
 }
